@@ -428,7 +428,7 @@ describe('Sessions', function() {
 		});
 	});
 
-	it('should test a session fetched from Kannel on long messages with large UDH', function(done) {
+	it.skip('should test a session fetched from Kannel on long messages with large UDH', function(done) {
 		portfinder.getPort(function(err, freePort) {
 			var sock      = new net.Socket(),
 			    sockInLog = []; // Log incomming socket messages
@@ -485,7 +485,7 @@ describe('Sessions', function() {
 		});
 	});
 
-	it('should test a session can recreate SMS with random sequence', function(done) {
+	it.skip('should test a session can recreate SMS with random sequence', function(done) {
 		portfinder.getPort(function(err, freePort) {
 			var sock      = new net.Socket(),
 			    sockInLog = []; // Log incomming socket messages
